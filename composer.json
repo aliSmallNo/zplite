@@ -1,27 +1,12 @@
 {
     "name": "alismall/zplite",
-    "description": "",
-    "keywords": [
-        "zplite"
-    ],
-    "homepage": "",
+    "type": "library",
     "license": "MIT",
-    "stable": "1.0.1",
-    "version": "1.0.1",
-    "authors": [
-        {
-            "name": "PHPER-ZP",
-            "homepage": ""
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "zplite\\": "src"
         }
-    ],
-    "require": {
-        "php": ">=5.3.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "zplite\\": "src/"
-        }
-    },
-    "extra": {
     }
 }
