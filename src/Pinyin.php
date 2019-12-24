@@ -157,7 +157,7 @@ class Pinyin
     protected function map(Closure $callback)
     {
         for ($i = 0; $i < 6; ++$i) {
-            $segment = $this->path . '/' . sprintf('words_%s', $i);
+            $segment = $this->path . '/' . sprintf('words_%s.php', $i);
 
             $dictionary = include $segment;
             $callback($dictionary);
@@ -166,7 +166,7 @@ class Pinyin
 
     protected function mapSurname(Closure $callback)
     {
-        $surnames = $this->path . '/surnames';
+        $surnames = $this->path . '/surnames.php';
 
         $dictionary = include $surnames;
         $callback($dictionary);
